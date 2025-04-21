@@ -31,6 +31,7 @@ async function onSubmit(event: FormSubmitEvent<FormState>) {
   });
 
   console.log(event.data);
+  await navigateTo('/');
 }
 </script>
 
@@ -39,7 +40,11 @@ async function onSubmit(event: FormSubmitEvent<FormState>) {
     <UForm :validate="validate" :state="state" @submit="onSubmit">
       <div class="w-full flex flex-col items-center gap-4">
         <UFormField label="Email" name="email">
-          <UInput v-model="state.email" class="input" />
+          <UInput
+            v-model="state.email"
+            placeholder="john@gmail.com"
+            class="input"
+          />
         </UFormField>
 
         <UFormField label="Password">
