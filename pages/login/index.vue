@@ -4,6 +4,7 @@ import type { FormState } from '~/types/login';
 
 const toast = useToast();
 const show = ref<boolean>(false);
+
 const state = reactive<FormState>({
   email: undefined,
   password: undefined,
@@ -33,6 +34,20 @@ async function onSubmit(event: FormSubmitEvent<FormState>) {
   console.log(event.data);
   await navigateTo('/');
 }
+
+definePageMeta({
+  layout: 'login',
+});
+
+useHead({
+  title: 'Compra fácil | Login',
+  meta: [
+    { 
+      name: 'Compra fácil | Login', 
+      content: 'Compra fácil' 
+    }
+  ]
+});
 </script>
 
 <template>
@@ -47,7 +62,7 @@ async function onSubmit(event: FormSubmitEvent<FormState>) {
           />
         </UFormField>
 
-        <UFormField label="Password">
+        <UFormField label="Password" name="password">
           <UInput
             v-model="state.password"
             placeholder="Password"

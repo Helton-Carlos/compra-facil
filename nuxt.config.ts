@@ -11,5 +11,15 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxt/ui'
   ],
+
   css: ['~/assets/css/main.css'],
+
+  app: {
+    head: {
+      title: 'Compra Fácil',
+      meta: [
+        { name: 'Compra fácil', content: 'Compra fácil' }
+      ]
+    }
+  }
 })
