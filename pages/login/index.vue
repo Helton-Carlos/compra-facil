@@ -2,6 +2,8 @@
 import type { FormError, FormSubmitEvent } from '@nuxt/ui';
 import type { FormState } from '~/types/login';
 
+const store = useUserStore();
+
 const toast = useToast();
 const show = ref<boolean>(false);
 
@@ -32,6 +34,7 @@ async function onSubmit(event: FormSubmitEvent<FormState>) {
   });
 
   console.log(event.data);
+  
   await navigateTo('/');
 }
 
@@ -54,6 +57,8 @@ useHead({
   <div class="min-h-screen flex items-center justify-center">
     <UForm :validate="validate" :state="state" @submit="onSubmit">
       <div class="w-full flex flex-col items-center gap-4">
+        <h1 class="text-4xl text-green-500 font-bold py-2">Compra Fácil</h1>
+        
         <UFormField label="Email" name="email">
           <UInput
             v-model="state.email"
