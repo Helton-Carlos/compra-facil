@@ -1,15 +1,15 @@
 <script setup lang="ts"></script>
 
 <template>
-  <header class="w-full bg-gray-200">
+  <header class="w-full bg-black">
     <div
-      class="w-[80%] flex justify-between item-center text-green-400 mx-auto py-4"
+      class="w-[80%] flex justify-between items-center text-green-400 py-4 mx-auto"
     >
-      <h1 class="text-3xl">Compra-Fácil</h1>
+      <h1 class="text-2xl font-semibold">Compra Fácil</h1>
 
       <nav>
         <ul>
-          <li>Config</li>
+          <li class="font-semibold">Config</li>
         </ul>
       </nav>
     </div>

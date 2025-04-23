@@ -2,7 +2,7 @@
 import type { FormError, FormSubmitEvent } from '@nuxt/ui';
 import type { FormState } from '~/types/login';
 
-const store = useUserStore();
+const { login } = useUserStore();
 
 const toast = useToast();
 const show = ref<boolean>(false);
@@ -33,7 +33,7 @@ async function onSubmit(event: FormSubmitEvent<FormState>) {
     color: 'success',
   });
 
-  store.login(event.data);
+  login(event.data);
   
   await navigateTo('/');
 }
