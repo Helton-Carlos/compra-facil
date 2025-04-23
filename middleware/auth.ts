@@ -1,7 +1,7 @@
-export default defineNuxtRouteMiddleware((to,) => {
-  const { user } = useUserStore();
+export default defineNuxtRouteMiddleware(() => {
+  const { user } = useUserStore()
 
-  if (!user) {
+  if (!user || process.env.ENVIRONMENT === 'PROD' ? false : true) {
     return navigateTo('/login')
   }
 })

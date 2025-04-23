@@ -3,14 +3,13 @@ import type { FormState } from '~/types/login';
 
 export const useUserStore = defineStore('user', () => {
   const localUserName = 'CF-USER';
-  
-  const user = ref<string | undefined>('');
+  const user = ref<string | undefined>(undefined);
 
   async function login(form: FormState) {
     const { email } = form;
 
     user.value = email;
-
+    
     await useStorage(localUserName, email, localStorage);
   }
 
