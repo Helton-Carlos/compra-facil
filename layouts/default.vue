@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <CPHeader />
+    <CFHeader />
     <slot />
   </div>
 </template>

@@ -33,7 +33,7 @@ async function onSubmit(event: FormSubmitEvent<FormState>) {
     color: 'success',
   });
 
-  console.log(event.data);
+  store.login(event.data);
   
   await navigateTo('/');
 }
@@ -58,7 +58,7 @@ useHead({
     <UForm :validate="validate" :state="state" @submit="onSubmit">
       <div class="w-full flex flex-col items-center gap-4">
         <h1 class="text-4xl text-green-500 font-bold py-2">Compra Fácil</h1>
-        
+
         <UFormField label="Email" name="email">
           <UInput
             v-model="state.email"
@@ -73,7 +73,6 @@ useHead({
             placeholder="Password"
             :type="show ? 'text' : 'password'"
             :ui="{ trailing: 'pe-1' }"
-            aria-describedby="password-strength"
             class="input"
           >
             <template #trailing>
