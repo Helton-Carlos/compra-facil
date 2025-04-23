@@ -1,11 +1,13 @@
 <script setup lang="ts"></script>
 
 <template>
-  <header class="w-full bg-black">
+  <header class="w-full bg-black absolute">
     <div
-      class="w-[80%] flex justify-between items-center text-green-400 py-4 mx-auto"
+      class="w-[80%] flex justify-between items-center py-4 mx-auto"
     >
-      <h1 class="text-2xl font-semibold">Compra Fácil</h1>
+      <h1 class="text-2xl font-semibold text-green-500">
+        Compra Fácil
+      </h1>
 
       <nav>
         <ul>

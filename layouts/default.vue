@@ -3,6 +3,9 @@
 <template>
   <div>
     <CFHeader />
-    <slot />
+    <div class="flex gap-4">
+      <Menu />
+      <slot />
+    </div>
   </div>
 </template>
