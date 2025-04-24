@@ -1,40 +1,22 @@
 <script setup lang="ts">
-import type { menu } from '~/types/menu'
-
-const menu = ref<menu[]>([
-  { 
-    name: 'Empresas', 
-    router: 'empresas' 
-  },
-  { 
-    name: 'Compras', 
-    router: 'compras' 
-  },
-  { 
-    name: 'Dividas', 
-    router: 'dividas' 
-  },
-  { 
-    name: 'Estoque', 
-    router: 'estoque' 
-  },
-])
+import { menu } from '~/utils/menu'
 </script>
 
 <template>
   <div
     class="bg-black w-[300px] h-lvh pt-10"
   >
-    <nav class="text-center font-semibold flex flex-col gap-5 pt-10">
+    <nav class="font-semibold flex flex-col gap-5 pt-10">
       <ul 
         v-for="items in menu" :key="items.name"
       >
         <li>
           <nuxt-link 
             :to="items.router"
-            class="hover:text-green-500"
+            class="flex justify-center items-center gap-2 hover:text-green-500"
           >  
             {{ items.name }}
+            <UIcon :name="items.icon" class="size-5" />
           </nuxt-link>
         </li>
       </ul>

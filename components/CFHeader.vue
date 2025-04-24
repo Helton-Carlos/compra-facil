@@ -11,7 +11,9 @@
 
       <nav>
         <ul>
-          <li class="font-semibold">Config</li>
+          <li class="font-semibold flex items-center gap-2">
+            Config<UIcon name="i-lucide-bell-ring" class="size-5" />
+          </li>
         </ul>
       </nav>
     </div>
