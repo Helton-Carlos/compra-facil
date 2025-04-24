@@ -4,6 +4,6 @@
   <div>
     <CFTitle />
 
-    <h3>produtos/materiais/</h3>
+    <h3>serviços</h3>
   </div>
 </template>

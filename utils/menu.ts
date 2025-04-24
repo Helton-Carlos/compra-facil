@@ -10,8 +10,8 @@ export const menu = [
     icon: 'i-lucide-shopping-basket'
   },
   { 
-    name: 'Dívidas', 
-    router: 'dividas', 
+    name: 'Serviços', 
+    router: 'servicos', 
     icon: 'i-lucide-banknote' 
   },
   { 
