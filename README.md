@@ -1,75 +1,47 @@
-# Nuxt Minimal Starter
+# Compra Facil
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+**💬 About.** 
 
-## Setup
+Compra fácil, Projeto em nuxt3, nuxt ui e biblioteca adicionais: Nuxt3, Typescript, TailwindCSS e Nuxt UI.
 
-Make sure to install dependencies:
+**👇 Follow the steps.** 
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+git clone https://github.com/Helton-Carlos/compra-facil.git
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+```bash
+npm i 
+```
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+# 🛒 Sistema de Compras
 
-Build the application for production:
+Este projeto tem como objetivo facilitar a gestão de **requisições, cotações, pedidos e cadastros** relacionados ao processo de compras de uma organização.
 
-```bash
-# npm
-npm run build
+## ✅ Funcionalidades
 
-# pnpm
-pnpm build
+### 📋 Cadastro
+- Cadastro de **fornecedores**
+- Cadastro de **produtos, materiais e serviços**
+- Cadastro de **categorias de compra**
 
-# yarn
-yarn build
+### 📦 Requisições e Pedidos
+- Criar **requisição de compra**
+- **Gerar e acompanhar pedidos de compra**
+- Visualizar **histórico de requisições** com status:
+  - Pendente
+  - Aprovado
+  - Entregue
 
-# bun
-bun run build
-```
+### 👤 Aprovação
+- **Workflow de aprovação** de pedidos (manual ou por níveis)
+- **Notificações por status** da requisição/pedido
 
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+### 💲 Cotação de Preços
+- **Comparação de preços** entre fornecedores
+- **Upload ou registro de propostas**
+- Escolha do fornecedor com **melhor custo/benefício**
