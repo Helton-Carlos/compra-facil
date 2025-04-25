@@ -10,5 +10,5 @@
 }
 
 .card {
-  @apply bg-black min-w-[350px] flex items-center justify-between gap-4 p-4 rounded-3xl
+  @apply bg-black w-full flex items-center justify-between gap-4 p-4 rounded-3xl md:w-[350px]
 }

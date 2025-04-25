@@ -1,7 +1,7 @@
 export const cards = [
   {
     title: 'Requisição de compra',
-    describe: 'requerimento, solicitação ou pedido',
+    describe: 'Requerimento, solicitação ou pedido',
     path: 'requisicao-compra',
     icon: 'i-lucide-shopping-cart'
   },

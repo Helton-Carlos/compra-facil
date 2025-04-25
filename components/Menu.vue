@@ -6,8 +6,8 @@ const route = useRoute();
 
 <template>
   <div class="bg-black w-[300px] h-lvh">
-    <h1 class="text-2xl text-center font-semibold pt-4 pb-10">
-      Compra Fácil
+    <h1 class="text-2xl text-green-500 text-center font-semibold pt-4 pb-10">
+      Compra Fácil <UIcon name="i-lucide-badge-plus" class="size-5" />
     </h1>
 
     <nav class="font-semibold flex flex-col gap-5 pt-10">
