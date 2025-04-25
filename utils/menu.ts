@@ -1,5 +1,10 @@
 export const menu = [
   { 
+    name: 'Dashbord', 
+    router: '/', 
+    icon: 'i-lucide-album'
+  },
+  { 
     name: 'Empresas', 
     router: 'empresas', 
     icon: 'i-lucide-briefcase-business'

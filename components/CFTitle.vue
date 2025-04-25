@@ -12,7 +12,10 @@ const menuIcon = computed(() => {
   <div>
     <h3 class="text-2xl flex items-center gap-2 uppercase font-bold">
       {{ name === 'servicos' ? 'serviços' : name }}
-      <UIcon :name="menuIcon[0].icon" class="size-5" />
+      <UIcon
+        :name="menuIcon[0]?.icon ? menuIcon[0]?.icon : 'i-lucide-album'"
+        class="size-5"
+      />
     </h3>
   </div>
 </template>
