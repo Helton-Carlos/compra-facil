@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { menu } from '~/utils/menu';
+
+const route = useRoute();
 </script>
 
 <template>
@@ -9,6 +11,7 @@ import { menu } from '~/utils/menu';
         <li>
           <nuxt-link
             :to="items.router"
+            :class="{'text-green-500' : route.name === items.router}"
             class="flex justify-center items-center py-1 gap-2 hover:text-green-500"
           >
             {{ items.name }}

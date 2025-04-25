@@ -10,7 +10,7 @@ const menuIcon = computed(() => {
 
 <template>
   <div>
-    <h3 class="text-2xl flex items-center gap-2 uppercase font-bold">
+    <h3 class="text-2xl flex items-center gap-2 capitalize font-bold">
       {{ name === 'servicos' ? 'serviços' : name }}
       <UIcon
         :name="menuIcon[0]?.icon ? menuIcon[0]?.icon : 'i-lucide-album'"
