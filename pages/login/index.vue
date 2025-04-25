@@ -33,9 +33,7 @@ async function onSubmit(event: FormSubmitEvent<FormState>) {
     color: 'success',
   });
 
-  login(event.data);
-  
-  await navigateTo('/');
+  await login(event.data);
 }
 
 definePageMeta({

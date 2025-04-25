@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { menu } from '~/utils/menu';
 
+const { logoff } = useUserStore();
 const route = useRoute();
 </script>
 
 <template>
-  <div class="bg-black w-[300px] h-lvh">
+  <div class="bg-black w-[300px] h-lvh flex flex-col">
     <h1 class="text-2xl text-green-500 text-center font-semibold pt-4 pb-10">
       Compra Fácil <UIcon name="i-lucide-badge-plus" class="size-5" />
     </h1>
@@ -24,5 +25,12 @@ const route = useRoute();
         </li>
       </ul>
     </nav>
+
+    <button 
+      class="font-semibold flex justify-center items-center gap-2 mt-auto mb-8 hover:text-green-500 cursor-pointer"
+      @click="logoff()"
+    >
+      Sair<UIcon name="i-lucide-log-out" class="size-5" />
+    </button>
   </div>
 </template>

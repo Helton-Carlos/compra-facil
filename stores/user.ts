@@ -11,10 +11,13 @@ export const useUserStore = defineStore('user', () => {
     user.value = email;
     
     await useStorage(localUserName, email, localStorage);
+    
+    return navigateTo('/')
   }
 
   function logoff() {
-    localStorage.removeItem(localUserName) 
+    localStorage.removeItem(localUserName);
+    return navigateTo('/login')
   }
 
   return {
