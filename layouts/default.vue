@@ -1,12 +1,13 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
-    <CFHeader />
-    <div class="flex gap-4 pt-10">
-      <Menu />
+  <div class="flex">
+    <Menu />
+
+    <div class="w-full">
+      <CFHeader />
       
-      <div class="mt-10 p-8">
+      <div class="mt-8 ml-10">
         <slot />
       </div>
     </div>

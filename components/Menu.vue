@@ -5,7 +5,11 @@ const route = useRoute();
 </script>
 
 <template>
-  <div class="bg-black w-[300px] h-lvh pt-10">
+  <div class="bg-black w-[300px] h-lvh">
+    <h1 class="text-2xl text-center font-semibold pt-4 pb-10">
+      Compra Fácil
+    </h1>
+
     <nav class="font-semibold flex flex-col gap-5 pt-10">
       <ul v-for="items in menu" :key="items.name">
         <li>
