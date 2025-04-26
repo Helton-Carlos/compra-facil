@@ -16,7 +16,7 @@ const route = useRoute();
         <li>
           <nuxt-link
             :to="items.router"
-            :class="{'text-green-500' : route.name === items.router}"
+            :class="{ 'text-green-500': route.name === items.router }"
             class="flex justify-center items-center py-1 gap-2 hover:text-green-500"
           >
             {{ items.name }}
@@ -26,11 +26,16 @@ const route = useRoute();
       </ul>
     </nav>
 
-    <button 
-      class="font-semibold flex justify-center items-center gap-2 mt-auto mb-8 hover:text-green-500 cursor-pointer"
-      @click="logoff()"
-    >
-      Sair<UIcon name="i-lucide-log-out" class="size-5" />
-    </button>
+    <div class="font-semibold flex justify-center items-center mt-auto mb-8">
+      <UButton
+        @click="logoff()"
+        icon="i-lucide-log-out"
+        size="md"
+        color="primary"
+        variant="solid"
+        class="px-8 cursor-pointer"
+        >Sair</UButton
+      >
+    </div>
   </div>
 </template>
