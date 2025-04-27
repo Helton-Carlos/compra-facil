@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { FormError, FormSubmitEvent } from '@nuxt/ui';
 import type { FormState } from '~/types/login';
+import logo from '~/assets/image/logo-retangular.png';
 
 const { login } = useUserStore();
 
@@ -43,11 +44,11 @@ definePageMeta({
 useHead({
   title: 'Compra fácil | Login',
   meta: [
-    { 
-      name: 'Compra fácil | Login', 
-      content: 'Compra fácil' 
-    }
-  ]
+    {
+      name: 'Compra fácil | Login',
+      content: 'Compra fácil',
+    },
+  ],
 });
 </script>
 
@@ -55,7 +56,7 @@ useHead({
   <div class="min-h-screen flex items-center justify-center">
     <UForm :validate="validate" :state="state" @submit="onSubmit">
       <div class="w-full flex flex-col items-center gap-4">
-        <h1 class="text-4xl text-green-500 font-bold py-2">Compra Fácil</h1>
+        <img :src="logo" alt="logo" class="w-[250px]" />
 
         <UFormField label="Email" name="email">
           <UInput

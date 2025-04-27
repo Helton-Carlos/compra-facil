@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import logo from '~/assets/image/logo-retangular.png';
 import { menu } from '~/utils/menu';
 
 const { logoff } = useUserStore();
@@ -7,11 +8,9 @@ const route = useRoute();
 
 <template>
   <div class="bg-black w-[300px] h-lvh flex flex-col">
-    <h1 class="text-2xl text-green-500 text-center font-semibold pt-4 pb-10">
-      Compra Fácil <UIcon name="i-lucide-badge-plus" class="size-5" />
-    </h1>
+    <img :src="logo" alt="logo" class="w-[150px] py-10 mx-auto" />
 
-    <nav class="font-semibold flex flex-col gap-5 pt-10">
+    <nav class="font-semibold flex flex-col gap-5 pt-5">
       <ul v-for="items in menu" :key="items.name">
         <li>
           <nuxt-link
