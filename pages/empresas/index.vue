@@ -3,6 +3,9 @@
 
 <template>
   <div>
-    <CFTitle />
+    <CFTitle
+      title="Empresas"
+      icon="i-lucide-briefcase-business"
+    />
   </div>
 </template>

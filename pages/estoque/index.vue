@@ -3,6 +3,9 @@
 
 <template>
   <div>
-    <CFTitle />
+    <CFTitle
+      title="Estoque"
+      icon="i-lucide-arrow-right-left"
+    />
   </div>
 </template>

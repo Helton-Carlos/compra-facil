@@ -2,7 +2,10 @@
 
 <template>
   <div>
-    <CFTitle />
+    <CFTitle
+      title="Compras"
+      icon="i-lucide-shopping-basket"
+    />
 
     <h3>produtos/materiais/</h3>
   </div>

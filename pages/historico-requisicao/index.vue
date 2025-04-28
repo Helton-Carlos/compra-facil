@@ -3,6 +3,9 @@
 
 <template>
   <div>
-    <CFTitle />
+    <CFTitle
+      title="Histórico de requisição"
+      icon="i-lucide-arrow-right-left"
+    />
   </div>
 </template>

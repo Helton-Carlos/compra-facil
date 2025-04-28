@@ -3,6 +3,9 @@
 
 <template>
   <div>
-    <CFTitle />
+    <CFTitle
+      title="Requisição de compra"
+      icon="i-lucide-shopping-basket"
+    />
   </div>
 </template>

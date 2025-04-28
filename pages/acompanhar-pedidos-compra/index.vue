@@ -3,6 +3,9 @@
 
 <template>
   <div>
-    <CFTitle />
+    <CFTitle
+      title="Acompanhar Pedidos Compra"
+      icon="i-lucide-banknote"
+    />
   </div>
 </template>

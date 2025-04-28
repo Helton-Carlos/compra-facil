@@ -8,7 +8,10 @@ definePageMeta({
 
 <template>
   <div>
-    <CFTitle />
+    <CFTitle
+      title="Dashboard"
+      icon="i-lucide-album"
+    />
 
     <div class="flex flex-wrap gap-4 mt-4">
       <div  
