@@ -1,7 +1,7 @@
 export interface Payment {
   id: string
   date: string
-  status: 'paid' | 'failed' | 'refunded'
-  email: string
+  status: 'comprado' | 'cancelado' | 'aguardando'
+  fornecedor: string
   amount: number
 }

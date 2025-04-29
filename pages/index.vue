@@ -9,12 +9,12 @@ const UBadge = resolveComponent('UBadge');
 const columns: TableColumn<Payment>[] = [
   {
     accessorKey: 'id',
-    header: '#',
-    cell: ({ row }) => `#${row.getValue('id')}`
+    header: 'id',
+    cell: ({ row }) => `${row.getValue('id')}`
   },
   {
     accessorKey: 'date',
-    header: 'Date',
+    header: 'Data',
     cell: ({ row }) => {
       return new Date(row.getValue('date')).toLocaleString('en-US', {
         day: 'numeric',
@@ -30,9 +30,9 @@ const columns: TableColumn<Payment>[] = [
     header: 'Status',
     cell: ({ row }) => {
       const color = {
-        paid: 'success' as const,
-        failed: 'error' as const,
-        refunded: 'neutral' as const
+        comprado: 'success' as const,
+        cancelado: 'error' as const,
+        aguardando: 'neutral' as const
       }[row.getValue('status') as string]
 
       return h(UBadge, { class: 'capitalize', variant: 'subtle', color }, () =>
@@ -41,8 +41,8 @@ const columns: TableColumn<Payment>[] = [
     }
   },
   {
-    accessorKey: 'email',
-    header: 'Email'
+    accessorKey: 'fornecedor',
+    header: 'Fornecedor'
   },
   {
     accessorKey: 'amount',
