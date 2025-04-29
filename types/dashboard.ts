@@ -1,4 +1,4 @@
-export interface Payment {
+export interface Dashboard {
   id: string
   date: string
   status: 'comprado' | 'cancelado' | 'aguardando'

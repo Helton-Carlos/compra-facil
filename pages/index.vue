@@ -85,6 +85,10 @@ definePageMeta({
         />
       </div>
     </div>
+ 
+    <h4 class="my-8 font-bold">
+      Compras em negociação
+    </h4>
 
     <UTable 
       class="bg-black my-4 rounded-3xl"

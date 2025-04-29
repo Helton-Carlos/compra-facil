@@ -1,4 +1,4 @@
-import type { Payment } from '~/types/dashboard';
+import type { Dashboard } from '~/types/dashboard';
 
 export const cards = [
   {
@@ -21,7 +21,7 @@ export const cards = [
   },
 ];
 
-export const data = ref<Payment[]>([
+export const data = ref<Dashboard[]>([
   {
     id: '4600',
     date: '2024-03-11T15:30:00',
