@@ -2,13 +2,14 @@
 @import "@nuxt/ui";
 
 .input {
-  @apply w-full text-base py-2 md:w-[350px] 
+  @apply w-full text-base py-2 md:w-[350px];
 }
 
 .btn {
-  @apply w-full text-base py-2 md:w-[350px]
+  @apply w-full text-base py-2 md:w-[350px];
 }
 
 .card {
-  @apply bg-black w-full flex items-center justify-between gap-4 p-4 rounded-3xl md:w-[350px]
+  @apply bg-black w-full flex items-center justify-between gap-4 p-4 rounded-3xl 
+            md:w-[350px] hover:bg-gray-500;
 }

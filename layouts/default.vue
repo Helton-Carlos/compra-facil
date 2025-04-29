@@ -7,7 +7,7 @@
     <div class="w-full">
       <CFHeader />
       
-      <div class="mt-8 ml-10">
+      <div class="mt-8 mx-10">
         <slot />
       </div>
     </div>
