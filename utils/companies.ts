@@ -15,7 +15,7 @@ export const cards = [
   },
   {
     title: 'Empresas Inativas',
-    describe: 'Veja ultimos historicos',
+    describe: 'Veja ultimos histórico',
     path: 'historico-requisicao',
     icon: 'i-lucide-backpack'
   },
