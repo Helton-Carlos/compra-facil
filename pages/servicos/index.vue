@@ -57,6 +57,7 @@ const columns: ServicesColumn[] = [
       title="Serviços"
       icon="i-lucide-briefcase-business"
     />
+    
     <div class="flex flex-wrap gap-4 mt-4">
       <div  
         v-for="item in cards"
