@@ -24,6 +24,8 @@ export const cards = [
 export const data = ref<Buy[]>([
   {
     id: '4600',
+    product: 'esponja',
+    amount: 12,
     status: 'aguardando',
     date: '2024-03-11T15:30:00',
     company: 'Casa da roupa',
@@ -32,6 +34,8 @@ export const data = ref<Buy[]>([
   },
   {
     id: '4599',
+    product: 'capacete',
+    amount: 12,
     status: 'finalizado',
     date: '2024-03-11T15:30:00',
     company: 'Casa da roupa',
@@ -40,6 +44,8 @@ export const data = ref<Buy[]>([
   },
   {
     id: '4598',
+    product: 'jaqueta',
+    amount: 12,
     status: 'negociado',
     date: '2024-03-11T15:30:00',
     company: 'Casa da roupa',
@@ -48,6 +54,8 @@ export const data = ref<Buy[]>([
   },
   {
     id: '4597',
+    product: 'armario',
+    amount: 12,
     status: 'negociado',
     date: '2024-03-11T15:30:00',
     company: 'Casa da roupa',
@@ -56,6 +64,8 @@ export const data = ref<Buy[]>([
   },
   {
     id: '4596',
+    product: 'celular',
+    amount: 12,
     status: 'aguardando',
     date: '2024-03-11T15:30:00',
     company: 'Casa da roupa',

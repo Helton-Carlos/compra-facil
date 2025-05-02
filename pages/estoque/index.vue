@@ -57,7 +57,6 @@ const columns: ProductColumn[] = [
       icon="i-lucide-arrow-right-left"
     />
 
-    
     <div class="flex flex-wrap gap-4 mt-4">
       <div  
         v-for="item in cards"

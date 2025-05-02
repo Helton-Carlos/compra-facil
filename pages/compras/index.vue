@@ -3,13 +3,21 @@ import { cards, data } from '~/utils/buy'
 import { h, resolveComponent } from 'vue'
 import type { BuyColumn } from '~/types/buy'
 
-const UBadge = resolveComponent('UBadge')
+const UBadge = resolveComponent('UBadge');
 
 const columns: BuyColumn[] = [
   {
     accessorKey: 'id',
     header: 'id',
     cell: ({ row }) => `${row.getValue('id')}`
+  },
+  {
+    accessorKey: 'product',
+    header: 'Produto'
+  },
+  {
+    accessorKey: 'amount',
+    header: 'Quantidade(s)'
   },
   {
     accessorKey: 'date',
@@ -23,7 +31,7 @@ const columns: BuyColumn[] = [
         hour12: false
       })
     }
-  },
+  }, 
   {
     accessorKey: 'status',
     header: 'Status',
