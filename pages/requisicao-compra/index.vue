@@ -4,6 +4,7 @@ import { h, resolveComponent } from 'vue'
 import type { BuyColumn } from '~/types/buy'
 
 const UBadge = resolveComponent('UBadge');
+const result = ref<BuyColumn[]>([])
 
 const columns: BuyColumn[] = [
   {
@@ -70,7 +71,15 @@ const columns: BuyColumn[] = [
       )
     }
   },
-]
+];
+
+function search(e: any) {
+  const name = e.target.value
+
+  const value = data.value.filter(({product}) => product === name);
+ 
+  result.value = value;
+}
 </script>
 
 <template>
@@ -87,11 +96,12 @@ const columns: BuyColumn[] = [
         size="md" 
         variant="outline" 
         placeholder="Busque sua compra..." 
+        @change="search"
       />
 
       <UTable 
         class="bg-black my-4 rounded-3xl"
-        :data="data" 
+        :data="result" 
         :columns="columns"  
       />
     </div>
