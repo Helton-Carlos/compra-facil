@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import logo from '~/assets/image/logo-retangular.png';
 import type { FormError, FormSubmitEvent } from '@nuxt/ui';
 import type { FormState } from '~/types/login';
-import logo from '~/assets/image/logo-retangular.png';
 
 const { login } = useUserStore();
 

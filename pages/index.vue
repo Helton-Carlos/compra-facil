@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { cards, data } from '~/utils/dashboard';
-import type { DashboardColumn } from '~/types/dashboard';
 import { h, resolveComponent } from 'vue';
+import type { DashboardColumn } from '~/types/dashboard';
 
 const UBadge = resolveComponent('UBadge');
 
