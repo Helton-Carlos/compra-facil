@@ -1,3 +1,5 @@
+import type { ColumnDef } from '@tanstack/vue-table';
+
 export interface Dashboard {
   id: string
   date: string
@@ -5,3 +7,5 @@ export interface Dashboard {
   fornecedor: string
   amount: number
 }
+
+export type DashboardColumn = ColumnDef<Dashboard>
