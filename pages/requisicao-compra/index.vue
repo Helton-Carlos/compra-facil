@@ -74,7 +74,7 @@ const columns: BuyColumn[] = [
 ];
 
 function search(e: any) {
-  const name = e.target.value
+  const name = e.target.value;
 
   const value = data.value.filter(({product}) => product === name);
  
