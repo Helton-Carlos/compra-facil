@@ -2,6 +2,7 @@
 import { cards, data } from '~/utils/dashboard';
 import { h, resolveComponent } from 'vue';
 import type { DashboardColumn } from '~/types/dashboard';
+import CFInfo from '~/components/CFInfo.vue';
 
 const UBadge = resolveComponent('UBadge');
 
@@ -59,6 +60,13 @@ const columns: DashboardColumn[] = [
   }
 ];
 
+const child = ref(null);
+
+onMounted(() => {
+  console.log(child.value?.primary)
+  console.log(child.value?.secondary)
+})
+
 definePageMeta({
   middleware: ['auth'],
 });
@@ -76,7 +84,7 @@ definePageMeta({
         v-for="item in cards"
         :key="item.title"
       >
-        <Card 
+        <CFCard 
           :title="item.title"
           :describe="item.describe"
           :icon= "item.icon"
@@ -88,6 +96,8 @@ definePageMeta({
     <h4 class="my-8 font-bold">
       Compras em negociação
     </h4>
+
+    <CFInfo ref="child" />
 
     <UTable 
       class="bg-black my-4 rounded-3xl"

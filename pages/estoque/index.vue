@@ -62,7 +62,7 @@ const columns: ProductColumn[] = [
         v-for="item in cards"
         :key="item.title"
       >
-        <Card 
+        <CFCard 
           :title="item.title"
           :describe="item.describe"
           :icon= "item.icon"
