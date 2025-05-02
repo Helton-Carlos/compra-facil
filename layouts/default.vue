@@ -2,7 +2,7 @@
 
 <template>
   <div class="flex">
-    <Menu />
+    <CFMenu />
 
     <div class="w-full">
       <CFHeader />

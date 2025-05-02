@@ -10,7 +10,7 @@ const route = useRoute();
   <div class="bg-black w-[300px] h-lvh flex flex-col">
     <img :src="logo" alt="logo" class="w-[150px] py-10 mx-auto" />
 
-    <nav class="font-semibold flex flex-col gap-5 pt-5">
+    <nav class="font-semibold flex flex-col gap-5 pt-10">
       <ul v-for="items in menu" :key="items.name">
         <li>
           <nuxt-link

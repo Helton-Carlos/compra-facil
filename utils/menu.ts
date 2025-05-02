@@ -29,14 +29,4 @@ export const menu = [
     router: 'requisicao-compra', 
     icon: 'i-lucide-shopping-basket'
   },
-  { 
-    name: 'Acompanhar', 
-    router: 'acompanhar-pedidos-compra', 
-    icon: 'i-lucide-banknote' 
-  },
-  { 
-    name: 'Histórico',
-    router: 'historico-requisicao',
-    icon: 'i-lucide-arrow-right-left'
-  },
 ];
