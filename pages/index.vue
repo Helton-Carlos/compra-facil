@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { cards, data } from '~/utils/dashboard';
 import type { TableColumn } from '@nuxt/ui';
-import type { Payment } from '~/types/dashboard';
+import type { Dashboard } from '~/types/dashboard';
 import { h, resolveComponent } from 'vue';
 
 const UBadge = resolveComponent('UBadge');
 
-const columns: TableColumn<Payment>[] = [
+const columns: TableColumn<Dashboard>[] = [
   {
     accessorKey: 'id',
     header: 'id',
