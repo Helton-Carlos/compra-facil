@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
     '@nuxt/test-utils',
     '@nuxt/ui',
+    '@nuxt/test-utils/module',
     '@pinia/nuxt',
     '@vueuse/nuxt',
   ],
