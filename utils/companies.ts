@@ -4,7 +4,7 @@ export const cards = [
   {
     title: 'Cadastrar empresas',
     describe: 'Cadastre aqui suas parcerias',
-    path: 'requisicao-compra',
+    path: 'cadastrar-empresas',
     icon: 'i-lucide-building-2'
   },
   {

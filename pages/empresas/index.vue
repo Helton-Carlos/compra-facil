@@ -50,7 +50,6 @@ const columns: CompaniesColumn[] = [
 ]
 </script>
 
-
 <template>
   <div>
     <CFTitle
@@ -71,7 +70,6 @@ const columns: CompaniesColumn[] = [
         />
       </div>
     </div>
-
     
     <h4 class="my-8 font-bold">
       Lista de empresas cadastradas
