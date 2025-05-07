@@ -1,10 +1,11 @@
 import { expect, describe, test } from 'vitest';
-import Card from '~/components/CFCard.vue';
+import { render } from '@testing-library/vue'
+import Card from '../../components/CFCard.vue'
 
-describe('CFCard testing', () => {
-  test('init component', async () => {
-    const wapper = await Card;
+describe('Component CFCard', () => {
+  test('Should test CFCard', async () => {
+    const component = render(Card);
 
-    expect(wapper).toBeDefined();
+    expect(component).toBeDefined();
   })
 })
