@@ -1,5 +1,5 @@
 import { expect, describe, test } from 'vitest';
-import { render, fireEvent, getByTestId} from '@testing-library/vue'
+import { render, fireEvent } from '@testing-library/vue'
 import Card from '../../components/CFCard.vue'
 
 describe('Component CFCard', () => {
