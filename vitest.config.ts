@@ -1,22 +1,25 @@
 import { defineConfig } from 'vitest/config'
+import { resolve } from 'node:path';
 import vue from '@vitejs/plugin-vue'
-import path from 'path'
 
 export default defineConfig({
   plugins: [vue(
     {
       template: {
         compilerOptions: {
-          isCustomElement: (tag) => ['i-lucide'].includes(tag),
+          isCustomElement: (tag) => ['VTU_COMPONENT'].includes(tag),
         }
       }
     }
   )],
+  base: "/",
+
   resolve: {
     alias: {
-      '~': path.resolve(__dirname, './src'), 
+      '~': resolve(__dirname, './'),
     },
   },
+
   test: {
     environment: 'jsdom',
     globals: true,
