@@ -1,4 +1,5 @@
 import type { Dashboard } from '~/types/dashboard';
+import { ref } from 'vue';
 
 export const cards = [
   {

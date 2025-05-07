@@ -2,7 +2,6 @@
 import { cards, data } from '~/utils/dashboard';
 import { h, resolveComponent } from 'vue';
 import type { DashboardColumn } from '~/types/dashboard';
-import CFInfo from '~/components/CFInfo.vue';
 
 const UBadge = resolveComponent('UBadge');
 
@@ -59,13 +58,6 @@ const columns: DashboardColumn[] = [
     }
   }
 ];
-
-const child = ref(null);
-
-onMounted(() => {
-  console.log(child.value?.primary)
-  console.log(child.value?.secondary)
-})
 
 definePageMeta({
   middleware: ['auth'],

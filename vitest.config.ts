@@ -24,5 +24,9 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true,
     setupFiles: './__test__/setup.ts',
+    coverage: {
+      provider: 'istanbul',
+      reporter: ['text', 'json', 'html'],
+    },
   },
 })
