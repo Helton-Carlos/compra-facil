@@ -9,6 +9,7 @@ defineProps<{
 
 <template>
   <nuxt-link 
+    data-testid="card"
     :to="path"
     class="card"
   >

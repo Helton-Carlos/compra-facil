@@ -1,11 +1,32 @@
 import { expect, describe, test } from 'vitest';
-import { render } from '@testing-library/vue'
+import { render, fireEvent, getByTestId} from '@testing-library/vue'
 import Card from '../../components/CFCard.vue'
 
 describe('Component CFCard', () => {
-  test('Should test CFCard', async () => {
-    const component = render(Card);
+  const props = {
+    title: "Requisição de compra",
+    describe: "Requerimento, solicitação ou pedido",
+    icon: "i-lucide-shopping-cart",
+    path: "/requisicao-compra",
+  };
 
-    expect(component).toBeDefined();
+  test('Should test CFCard', async () => {
+    const card = await render(Card, {
+      props: props
+    });
+
+    expect(card).toBeDefined();
+  })
+
+  test('Should test path', async () => {
+    const card = await render(Card, {
+      props: props
+    });
+
+    const path = card.getByTestId("card");
+
+    fireEvent.click(path)
+   
+    expect(path).toBeTruthy();
   })
 })
