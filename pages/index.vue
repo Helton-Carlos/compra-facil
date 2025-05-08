@@ -89,8 +89,6 @@ definePageMeta({
       Compras em negociação
     </h4>
 
-    <CFInfo ref="child" />
-
     <UTable 
       class="bg-black my-4 rounded-3xl"
       :data="data" 
