@@ -8,7 +8,7 @@ const route = useRoute();
 
 <template>
   <div class="bg-black w-[300px] h-lvh flex flex-col">
-    <img :src="logo" alt="logo" class="w-[150px] py-10 mx-auto" />
+    <img :src="logo" alt="logo" class="w-[150px] py-10 mx-auto" >
 
     <nav class="font-semibold flex flex-col gap-5 pt-10">
       <ul v-for="items in menu" :key="items.name">
@@ -27,12 +27,12 @@ const route = useRoute();
 
     <div class="font-semibold flex justify-center items-center mt-auto mb-8">
       <UButton
-        @click="logoff()"
-        icon="i-lucide-log-out"
         size="md"
+        icon="i-lucide-log-out"
         color="primary"
         variant="solid"
         class="px-8 cursor-pointer"
+        @click="logoff()"
         >Sair</UButton
       >
     </div>
