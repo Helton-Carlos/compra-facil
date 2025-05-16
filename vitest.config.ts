@@ -1,22 +1,25 @@
-import { defineConfig } from 'vitest/config'
+import { defineConfig } from 'vitest/config';
 import { resolve } from 'node:path';
-import vue from '@vitejs/plugin-vue'
+import vue from '@vitejs/plugin-vue';
+import path from 'path';
 
 export default defineConfig({
   plugins: [vue(
     {
       template: {
         compilerOptions: {
-          isCustomElement: (tag) => ['VTU_COMPONENT'].includes(tag),
-        }
+          isCustomElement: tag => tag.startsWith('U'),
+        },
       }
     }
   )],
+
   base: "/",
 
   resolve: {
     alias: {
       '~': resolve(__dirname, './'),
+      '#app': path.resolve(__dirname, './__test__/mocks/utils'),
     },
   },
 

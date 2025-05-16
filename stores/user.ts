@@ -1,5 +1,8 @@
+import { defineStore } from 'pinia';
 import { useStorage } from '@vueuse/core';
 import type { FormState } from '~/types/login';
+import { ref } from 'vue';
+import { navigateTo } from '#app';
 
 export const useUserStore = defineStore('user', () => {
   const localUserName = 'CF-USER';
