@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import logo from '~/assets/image/logo-retangular.png';
 import { menu } from '~/utils/menu';
+import { useUserStore } from '~/stores/user'
+import { useRoute } from 'vue-router'
 
 const { logoff } = useUserStore();
 const route = useRoute();

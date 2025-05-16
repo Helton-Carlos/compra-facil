@@ -1,6 +1,6 @@
 import { expect, describe, test } from 'vitest';
 import { render, fireEvent } from '@testing-library/vue'
-import { delay } from '../utils/utils'
+import { delay } from '../mocks/utils'
 import Header from '~/components/CFHeader.vue'
 
 describe('Component Header', () => {
