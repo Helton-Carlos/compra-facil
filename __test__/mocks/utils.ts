@@ -37,11 +37,7 @@ export const useLoadingIndicator = vi.fn(() => ({
 
 // Mockando funções relacionadas ao Nuxt
 export const useNuxtApp = vi.fn(() => ({
-  $v1: $fetch,
-  $login: $fetch,
-  $logout: $fetch,
-  $units: $fetch,
-  $manager: $fetch,
+  $data: $fetch,
   callHook,
   hook,
 }));
