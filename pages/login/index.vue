@@ -56,7 +56,7 @@ useHead({
   <div class="min-h-screen flex items-center justify-center">
     <UForm :validate="validate" :state="state" @submit="onSubmit">
       <div class="w-full flex flex-col items-center gap-4">
-        <img :src="logo" alt="logo" class="w-[250px]" />
+        <img :src="logo" alt="logo" class="w-[250px]" >
 
         <UFormField label="Email" name="email">
           <UInput
