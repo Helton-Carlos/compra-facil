@@ -56,7 +56,7 @@ useHead({
   <div class="min-h-screen flex items-center justify-center">
     <UForm :validate="validate" :state="state" @submit="onSubmit">
       <div class="w-full flex flex-col items-center gap-4">
-        <img :src="logo" alt="logo" class="w-[250px]" >
+        <img :src="logo" alt="logo" class="w-[250px]" />
 
         <UFormField label="Email" name="email">
           <UInput
@@ -67,30 +67,30 @@ useHead({
         </UFormField>
 
         <UFormField label="Password" name="password">
-          <UInput
-            v-model="state.password"
-            placeholder="Password"
-            :type="show ? 'text' : 'password'"
-            :ui="{ trailing: 'pe-1' }"
-            class="input"
-          >
-            <template #trailing>
-              <UButton
-                color="neutral"
-                variant="link"
-                size="sm"
-                :icon="show ? 'i-lucide-eye-off' : 'i-lucide-eye'"
-                :aria-label="show ? 'Hide password' : 'Show password'"
-                :aria-pressed="show"
-                aria-controls="password"
-                @click="show = !show"
-              />
-            </template>
-          </UInput>
+          <div class="relative w-full">
+            <UInput
+              v-model="state.password"
+              placeholder="Password"
+              :type="show ? 'text' : 'password'"
+              class="input pr-10"
+            />
+            <UButton
+              class="absolute right-2 top-1/2 -translate-y-1/2"
+              color="neutral"
+              variant="link"
+              size="sm"
+              :icon="show ? 'i-lucide-eye-off' : 'i-lucide-eye'"
+              :aria-label="show ? 'Hide password' : 'Show password'"
+              :aria-pressed="show"
+              aria-controls="password"
+              @click="show = !show"
+            />
+          </div>
         </UFormField>
 
-        <UButton class="btn" type="submit"> Submit </UButton>
+        <UButton class="btn" type="submit">Submit</UButton>
       </div>
     </UForm>
   </div>
 </template>
+
