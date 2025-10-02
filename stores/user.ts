@@ -8,6 +8,8 @@ export const useUserStore = defineStore('user', () => {
   const localUserName = 'CF-USER';
   const user = ref<string | undefined>(undefined);
 
+  const isAuthenticated = computed(()=> Boolean(user.value));
+
   async function login(form: FormState) {
     const { email } = form;
 
@@ -25,6 +27,7 @@ export const useUserStore = defineStore('user', () => {
 
   return {
     user,
+    isAuthenticated,
     login,
     logoff,
   }

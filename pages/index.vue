@@ -58,10 +58,6 @@ const columns: DashboardColumn[] = [
     }
   }
 ];
-
-definePageMeta({
-  middleware: ['auth'],
-});
 </script>
 
 <template>

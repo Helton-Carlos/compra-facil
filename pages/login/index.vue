@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import logo from '~/assets/image/logo-retangular.png';
-import CFAltcha from '~/components/CFAltcha.vue';
 import type { FormError, FormSubmitEvent } from '@nuxt/ui';
 import type { FormState } from '~/types/login';
 
@@ -8,7 +7,6 @@ const { login } = useUserStore();
 
 const toast = useToast();
 const show = ref<boolean>(false);
-const altchaPayload = ref<string>('');
 
 const state = reactive<FormState>({
   email: undefined,
@@ -90,11 +88,7 @@ useHead({
           </div>
         </UFormField>
 
-        <CFAltcha
-          v-model:payload="altchaPayload"
-        />
-
-        <UButton class="btn" type="submit">Submit</UButton>
+        <UButton class="btn" type="submit">Entrar</UButton>
       </div>
     </UForm>
   </div>
