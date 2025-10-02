@@ -45,3 +45,6 @@ Este projeto tem como objetivo facilitar a gestão de **requisições, cotaçõe
 - **Comparação de preços** entre fornecedores
 - **Upload ou registro de propostas**
 - Escolha do fornecedor com **melhor custo/benefício**
+
+<img width="2556" height="903" alt="image" src="https://github.com/user-attachments/assets/ef67f952-336d-48a5-9903-98e2b8bd4e45" />
+
