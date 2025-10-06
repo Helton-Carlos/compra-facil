@@ -6,4 +6,4 @@ export default () => {
     }
   ]
 }  
-//http://localhost:3000/api/server
+//http://localhost:3000/api/user/server
