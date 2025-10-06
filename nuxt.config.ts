@@ -24,5 +24,11 @@ export default defineNuxtConfig({
         { name: 'Compra fácil', content: 'Compra fácil' }
       ]
     }
+  },
+
+  runtimeConfig: {
+    public:{
+      apiSecretUrl: process.env.NUXT_API_SECRET_URL || 'http://localhost:3000/api',
+    }
   }
 })

@@ -1,7 +1,10 @@
 <script setup lang="ts">
-import { cards, data } from '~/utils/services'
+import { cards } from '~/utils/services'
 import { h, resolveComponent } from 'vue'
-import type { ServicesColumn } from '~/types/services'
+import type { Services, ServicesColumn } from '~/types/services'
+import { useServerData } from '~/composables/useServerData';
+
+const { data } = useServerData('/services');
 
 const UBadge = resolveComponent('UBadge')
 
@@ -79,7 +82,7 @@ const columns: ServicesColumn[] = [
 
     <UTable 
       class="bg-black my-4 rounded-3xl"
-      :data="data" 
+      :data="data as Services[]" 
       :columns="columns"  
     />
   </div>

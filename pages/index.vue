@@ -1,7 +1,10 @@
 <script setup lang="ts">
-import { cards, data } from '~/utils/dashboard';
+import { cards } from '~/utils/dashboard';
 import { h, resolveComponent } from 'vue';
-import type { DashboardColumn } from '~/types/dashboard';
+import type { Dashboard, DashboardColumn } from '~/types/dashboard';
+import { useServerData } from '~/composables/useServerData';
+
+const { data } = useServerData('/dashboard');
 
 const UBadge = resolveComponent('UBadge');
 
@@ -87,7 +90,7 @@ const columns: DashboardColumn[] = [
 
     <UTable 
       class="bg-black my-4 rounded-3xl"
-      :data="data" 
+      :data="data as Dashboard[]" 
       :columns="columns"  
     />
   </div>

@@ -1,6 +1,3 @@
-import type { Dashboard } from '~/types/dashboard';
-import { ref } from 'vue';
-
 export const cards = [
   {
     title: 'Requisição de compra',
@@ -21,5 +18,3 @@ export const cards = [
     icon: 'i-lucide-backpack'
   },
 ];
-
-export const data = ref<Dashboard[]>([])

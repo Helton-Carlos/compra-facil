@@ -1,5 +1,3 @@
-import type { Product } from '~/types/product';
-
 export const cards = [
   {
     title: 'Cadastrar produto',
@@ -14,5 +12,3 @@ export const cards = [
     icon: 'i-lucide-backpack'
   },
 ];
-
-export const data = ref<Product[]>([])

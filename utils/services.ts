@@ -1,5 +1,3 @@
-import type { Services } from '~/types/services';
-
 export const cards = [
   {
     title: 'Prestação de serviços',
@@ -14,5 +12,3 @@ export const cards = [
     icon: 'i-lucide-book-heart'
   },
 ];
-
-export const data = ref<Services[]>([])

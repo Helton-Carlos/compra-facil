@@ -1,8 +1,10 @@
 <!-- eslint-disable @typescript-eslint/no-explicit-any -->
 <script setup lang="ts">
-import { data } from '~/utils/buy'
 import { h, resolveComponent } from 'vue'
-import type { BuyColumn } from '~/types/buy'
+import type { BuyColumn, Buy } from '~/types/buy'
+import { useServerData } from '~/composables/useServerData';
+
+const { data } = useServerData('/buy');
 
 const UBadge = resolveComponent('UBadge');
 const result = ref<BuyColumn[]>([])
@@ -77,8 +79,10 @@ const columns: BuyColumn[] = [
 function search(e: any) {
   const name = e.target.value;
 
-  const value = data.value.filter(({product}) => product === name);
- 
+  const all = data.value  as Buy[]
+
+  const value = all.filter(({product}) => product === name);
+  
   result.value = value;
 }
 </script>
@@ -102,7 +106,7 @@ function search(e: any) {
 
       <UTable 
         class="bg-black my-4 rounded-3xl"
-        :data="result" 
+        :data="data as Buy[]" 
         :columns="columns"  
       />
     </div>

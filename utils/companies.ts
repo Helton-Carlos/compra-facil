@@ -1,5 +1,3 @@
-import type { Companies } from '~/types/companies';
-
 export const cards = [
   {
     title: 'Cadastrar empresas',
@@ -20,5 +18,3 @@ export const cards = [
     icon: 'i-lucide-backpack'
   },
 ];
-
-export const data = ref<Companies[]>([])

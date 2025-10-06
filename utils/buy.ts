@@ -1,5 +1,3 @@
-import type { Buy } from '~/types/buy';
-
 export const cards = [
   {
     title: 'Cadastrar compras',
@@ -20,5 +18,3 @@ export const cards = [
     icon: 'i-lucide-backpack'
   },
 ];
-
-export const data = ref<Buy[]>([])

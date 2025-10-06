@@ -1,7 +1,10 @@
 <script setup lang="ts">
-import { cards, data } from '~/utils/product'
+import { cards } from '~/utils/product'
 import { h, resolveComponent } from 'vue'
-import type { ProductColumn } from '~/types/product'
+import type { ProductColumn, Product } from '~/types/product'
+import { useServerData } from '~/composables/useServerData';
+
+const { data } = useServerData('/products');
 
 const UBadge = resolveComponent('UBadge')
 
@@ -78,7 +81,7 @@ const columns: ProductColumn[] = [
 
     <UTable 
       class="bg-black my-4 rounded-3xl"
-      :data="data" 
+      :data="data as Product[]" 
       :columns="columns"  
     />
   </div>
